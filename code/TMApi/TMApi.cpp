@@ -43,7 +43,6 @@ TM_API int tm_exec(
 	// todo: param validation and proper errors.
 	CTMDb *pDb = (CTMDb *)db;
 	return pDb->Exec(sql, callback, blob, errmsg);
-	return TM_OK;
 }
 
 #if later

@@ -2,14 +2,12 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/TMFileReader/ipch
-/TMFileReader/TMFileReader/Debug
-/TMFileReader/Debug
-/TMFileReader/TMApi/Debug
 *.opensdf
 *.sdf
 *.suo
-/Runtime/Debug
-/TMApi/Debug
-/TMApi/ipch/tmapi-bb5d8d19
 *.user
+/code/Runtime/Debug/*
+/code/tm2sqllite/Debug/*
+/code/TMApi/Debug/*
+/code/TMFileReader/Debug/*
+/code/tm2sqllite/ipch

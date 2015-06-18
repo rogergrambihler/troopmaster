@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{53EB681E-4D0A-40FF-A5AC-2B45FA64B17F}</ProjectGuid>
+    <ProjectGuid>{3A1FF0A6-9BE2-4AC0-900E-0C7361AD58D5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>TMApi</RootNamespace>
+    <RootNamespace>Runtime</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,27 +74,22 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Decrypt.h" />
+    <ClInclude Include="CStdio.h" />
+    <ClInclude Include="CString.h" />
+    <ClInclude Include="Debug.h" />
+    <ClInclude Include="NativeTypes.h" />
+    <ClInclude Include="Runtime.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="TMApi.h" />
-    <ClInclude Include="TMDb.h" />
-    <ClInclude Include="TMTable.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Decrypt.cpp" />
+    <ClCompile Include="CStdio.cpp" />
+    <ClCompile Include="CString.cpp" />
+    <ClCompile Include="Debug.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="TMApi.cpp" />
-    <ClCompile Include="TMDb.cpp" />
-    <ClCompile Include="TMTable.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Runtime\Runtime.vcxproj">
-      <Project>{3a1ff0a6-9be2-4ac0-900e-0c7361ad58d5}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
