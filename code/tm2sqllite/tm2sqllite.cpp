@@ -198,7 +198,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	// Check if output file already exists.
 	if (!fOverWriteExistingFile && CStdio::FileExists(sqlLiteOutputFile))
 	{
-		fprintf(stderr, "The output file %s already exists. Use -f option if want to force an overwrite the existing file.\n",
+		fprintf(stderr, "The output file %s already exists. Use -f option if want to force replacing the existing file.\n",
 			(char*) sqlLiteOutputFile);
 		exit(EXIT_FAILURE);
 	}
