@@ -99,6 +99,11 @@
       <Project>{53eb681e-4d0a-40ff-a5ac-2b45fa64b17f}</Project>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.htm">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
